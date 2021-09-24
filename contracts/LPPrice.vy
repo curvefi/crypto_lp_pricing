@@ -50,7 +50,7 @@ def lp_price() -> uint256:
     a: uint256 = Tricrypto(POOL).A() * 10**18 / A0
     discount: uint256 = max(g**2 / 10**18 * a, 10**34)  # handle qbrt nonconvergence
     # if discount is small, we take an upper bound
-    discount = self.cubic_root(discount)
+    discount = self.cubic_root(discount) * DISCOUNT0 / 10**18
 
     max_price -= max_price * discount / 10**18
 
