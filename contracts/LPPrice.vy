@@ -10,9 +10,9 @@ interface Tricrypto:
 
 
 POOL: constant(address) = 0xD51a44d3FaE010294C616388b506AcdA1bfAAE46
-GAMMA0: constant(uint256) = 21000000000000  # 2.1e-5
+GAMMA0: constant(uint256) = 28000000000000  # 2.8e-5
 A0: constant(uint256) = 2 * 3**3 * 10000
-DISCOUNT0: constant(uint256) = 1000000000000000  # 0.001
+DISCOUNT0: constant(uint256) = 1087460000000000  # 0.00108..
 
 
 @pure
